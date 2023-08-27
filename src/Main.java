@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static int[] generateRandomArray() {
@@ -53,5 +54,15 @@ public class Main {
                 sum = sum + bookKeeping[i];
         }
         System.out.println("Средняя сумма трат за месяц составила " + (sum / 30) + " рублей");
+    }
+
+    public static void task4() {
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        System.out.println("\n Задача 4 \n");
+
+        for (int i = reverseFullName.length - 1; i >= 0 ; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+        System.out.println("\n");
     }
 }
